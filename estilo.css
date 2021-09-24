@@ -355,6 +355,7 @@ textarea{
     width: 7em;
     height: 2em;
     border: 0;
+    color: white;
 }
 .send:hover{
     background-color: #E64A76
