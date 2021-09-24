@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+body{
+    background-color: #10002b;
+    
+}
+/*********COMIENZA BARRA DE NAVEGACION**********/
+nav{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 1px 1px 20px black;
+    background-color: #10002b;
+    
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: inline-block;
+    padding: 7px 14px 8px 14px;
+    margin-right: 40px;
+    
+}
+nav a:hover{
+    color: #c9184a ;
+}
+.boton{
+    background-color: #c9184a;
+    border-radius: 18px;
+    width: 7em;
+    height: 1.2em;
+}
+.boton:hover{
+    color: white;
+    background-color: #E64A76;
+}
+/*************FINALIZA BARRA DE NAVEGACION************/
+
+
+/*************COMIENZA LA SECCION SOBRE MI**********/
+.section{
+    display: flex;
+    justify-content: space-around;
+    /*border: 1px solid black;*/
+    width: 100%;
+}
+.cardhola{
+    margin: 100px 10px 0px 80px;
+}
+.cardprincipal{
+    
+   /*border: 1px solid blue;*/
+    width: 40%;
+    line-height: 70px;
+    display: flex;
+    display: inline-block;
+   /* align-content: center;*/
+}
+.info{
+    margin: 100px 0px;
+   /* border: 1px solid plum;*/
+
+}
+.info>h2{
+    font-size: 35px;
+}
+.info>h1{
+    font-size: 40px;
+    color: #c9184a;
+    font-weight: 800;
+}
+.cardprincipal img{
+    width: 100%;
+   
+}
+.about{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    padding: 10px 25px;
+    margin-right: 40px;   
+}
+/****************************************/
+
+/*************COMIENZA LA SECCION DE CONOCIMIENTOS**********/
+.cajapadre{
+    text-align: center;
+    display: inline-block;
+    display: flex;
+    align-content: center;
+   /* border: 1px solid white;*/
+    width: 100%;
+
+}
+/*.cajaconocimientos{
+    margin: 300x 10px 100px 20px;
+    border: 1px solid white;
+}*/
+.titulo{
+    width: 35%;
+    height: 25%;
+    margin: 75px auto 20px auto;
+   /*border: 1px solid black;*/
+}
+.titulo h1{
+    font-size: 35px;
+    font-weight: 800;
+   /* border: 1px solid white;*/
+    margin: 30px 10px;
+}
+.iconos{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    /*height: 60%;*/
+   /*border: 1px solid red;*/
+    
+}
+.cards{
+    width: 25%;
+    border: 1px solid #1e0943;
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #170635;
+}
+figure{
+    width: 100%;
+   /* display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;*/
+}
+.bord:hover{
+    border: 1px solid #c9184a;
+    box-shadow: 1px 1px 5px #c9184a;
+}
+.cards:hover figure figcaption{
+   /* */
+    color: #c9184a;
+    /*text-shadow: 1px 1px 1px #c9184a*/
+}
+/*.cards figure figcaption{
+    color: #c9184a;
+}*/
+.cards img{ /****imagenes****/
+    width: 40%;
+    height: 40%;
+    
+}
+/*.cards>figure> .top{
+    position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+.cards >figure> .top >.sup:hover{
+    opacity: 0;
+
+}    */
+.cards figcaption{
+    font-weight: 800;
+    font-size: 17px;
+}
+/*****************************************************/
+
+
+/****************************CITA MOTIVACIONAL************/
+.cita{
+    text-align: center;
+    background-color: #c9184a;
+    padding: 50px;
+    width: 94%;
+    margin: 50px 0px 0px 0px;
+    display: flex;
+    /*justify-content: center;*/
+    display: inline-block;
+}
+.cita img{
+    width: 5%;
+}
+.cita p{
+    /*border: 1px solid white;*/
+    width: 80%;
+    margin: 20px auto;
+    font-size: 19px;
+}
+.cita h3{
+    font-size: 25px;
+    font-weight: 800;
+}
+/****************************************************************/
+
+
+/**************SECCION MIS PROYECTOS****************************/
+.cajapr{
+    margin-bottom: 150px;
+}
+.proy{
+    width: 95%;
+}
+.pr{
+    padding-bottom: 35px;
+}
+.pr img{
+    width: 50%;
+    height: 150px;
+    padding-bottom: 25px;
+}
+.cards a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+/****************************************************************/
+
+/*********************SECCION CONTACTAME***********************/
+            /***************contacto*******/
+.contacto{
+    width: 90%;
+    border: 1px solid #1e0943;
+    background-color: #170635;
+    display: flex;
+   
+}
+.cardcont{
+    /*justify-content: center;*/
+   margin: 100px auto;
+   line-height: normal;
+   width: 45%;
+   /*border: 1px solid blue;*/
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.tc{
+    width: 100%;
+    margin: 30px 0px;
+}
+.tc p{
+    margin: 30px 10px 60px 0px;
+}
+.link{
+    list-style: none;
+    line-height: 55px;
+    margin-top: 25px;
+   /* border: 1px solid green;*/
+}
+/*.red{
+    border: 1px solid red
+}
+.redlink{
+    border: 1px solid blue;
+    width: 100%;
+    height: 100%;
+}*/
+.link>li>a>img{
+    width: 4%;
+    margin-right: 13px;
+}
+.link a{
+    text-decoration: none;
+}
+.link a:hover{
+    box-shadow: 1px 1px 5px #c9184a;
+    color: #c9184a;
+    border-radius: 18px;
+    padding: 15px;
+    
+}
+            /******************************/
+
+.cardcont .tit{
+    font-size: 35px;
+    font-weight: 800;
+   /* border: 1px solid white;*/
+    margin: 30px 10px;
+}
+/*.form{
+    margin-bottom: 80px;
+}*/
+.divform{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    /*border: 1px solid rosybrown;*/
+    
+}
+.cardform{/*
+    display: inline-block;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 200%;
+    /*margin: 5px;*/
+   /* border: 1px solid red;*/
+
+}
+.carddatos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    /*border: 1px solid green;*/
+}
+/*.first{
+    justify-content: space-around;
+    
+}*/
+.sub{
+    width: 45%;
+    margin: 10px;
+}
+.dato{
+    border-radius: 15px;
+    width: 15em;
+    height: 1.8em;
+    border: 0;
+    padding-left: 10px ;
+}
+.width{
+    width: 32em;
+}
+.coment{
+    height: 5em;
+    padding-top: 5px;
+}
+textarea{
+    color: gray;
+}
+.send{
+    margin: 15px 0px;
+    background-color: #c9184a;
+    border-radius: 18px;
+    width: 7em;
+    height: 2em;
+    border: 0;
+}
+.send:hover{
+    background-color: #E64A76
+}
+label{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+input{
+    color: rgb(94, 90, 90);
+}
