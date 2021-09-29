@@ -7,7 +7,9 @@
 }
 body{
     background-color: #10002b;
-    
+   /* -webkit-box-shadow: inset 1px 1px 20px  black ;
+    -moz-box-shadow: inset 1px 1px 20px  black ;
+    box-shadow: inset 1px 1px 20px  black ;*/
 }
 /*********COMIENZA BARRA DE NAVEGACION**********/
 nav{
@@ -110,8 +112,8 @@ nav a:hover{
     border: 1px solid white;
 }*/
 .titulo{
-    width: 35%;
-    height: 25%;
+    width: 40%;
+    
     margin: 75px auto 20px auto;
    /*border: 1px solid black;*/
 }
@@ -120,6 +122,9 @@ nav a:hover{
     font-weight: 800;
    /* border: 1px solid white;*/
     margin: 30px 10px;
+}
+.titulo p{
+    letter-spacing: 0.2em;
 }
 .iconos{
     margin: 0px auto;
@@ -211,6 +216,8 @@ figure{
 /**************SECCION MIS PROYECTOS****************************/
 .cajapr{
     margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
 }
 .proy{
     width: 95%;
@@ -242,7 +249,7 @@ figure{
 }
 .cardcont{
     /*justify-content: center;*/
-   margin: 100px auto;
+   margin: 50px auto 100px auto ;
    line-height: normal;
    width: 45%;
    /*border: 1px solid blue;*/
@@ -251,17 +258,25 @@ figure{
     justify-content: center;
     flex-wrap: wrap;
 }
+.ct{
+    margin-left: 100px;
+}
+.fr{
+    margin-right: 100px;
+}
 .tc{
     width: 100%;
     margin: 30px 0px;
 }
 .tc p{
-    margin: 30px 10px 60px 0px;
+    margin: 30px 10px 30px 12px;
+    font-weight: bold;
 }
 .link{
     list-style: none;
     line-height: 55px;
     margin-top: 25px;
+    margin-left: 9px;
    /* border: 1px solid green;*/
 }
 /*.red{
@@ -272,20 +287,46 @@ figure{
     width: 100%;
     height: 100%;
 }*/
-.link>li>a>img{
+/*.link>li>a>img{
     width: 4%;
     margin-right: 13px;
-}
-.link a{
+}*/
+
+
+.icon{
+    line-height: 0.5em;
+    margin-top: 30px;
+    /*border: 1px solid brown;*/
     text-decoration: none;
-}
-.link a:hover{
-    box-shadow: 1px 1px 5px #c9184a;
-    color: #c9184a;
-    border-radius: 18px;
-    padding: 15px;
+    display: flex;
+    align-items: center;
     
 }
+.fab, .fas{
+    color: #c9184a;
+    width: 1.5em;
+    font-size: 1.5em;
+    line-height: 10em;
+    transition: 0.3s;
+}
+.icon:hover{
+    color: #c9184a;
+    /*box-shadow: 1px 1px 5px #c9184a;
+    
+    border-radius: 18px;
+    padding: 15px;*/
+    
+}
+.icon:hover .fab{
+   text-shadow: 1px 1px 20px #c9184a;
+   color: white;
+}
+.icon:hover .fas{
+    text-shadow: 1px 1px 20px #c9184a;
+    color: white;
+ }
+
+    
             /******************************/
 
 .cardcont .tit{
@@ -309,17 +350,17 @@ figure{
     display: inline-block;*/
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+   justify-content: space-around;
     width: 100%;
-    height: 200%;
+   /* height: 200%;*/
     /*margin: 5px;*/
-   /* border: 1px solid red;*/
+    /*border: 1px solid red;*/
 
 }
 .carddatos{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     margin: 10px;
     /*border: 1px solid green;*/
 }
@@ -329,17 +370,22 @@ figure{
 }*/
 .sub{
     width: 45%;
-    margin: 10px;
+   /* margin: 5px;*/
 }
 .dato{
     border-radius: 15px;
-    width: 15em;
+    width: 100%;
     height: 1.8em;
     border: 0;
     padding-left: 10px ;
+    box-shadow: none;
+}
+.dato:focus{
+    box-shadow: 0px 0px 10px #c9184a;
+    outline: none;
 }
 .width{
-    width: 32em;
+    width: 100%;
 }
 .coment{
     height: 5em;
@@ -366,4 +412,62 @@ label{
 }
 input{
     color: rgb(94, 90, 90);
+}
+
+/********************************************************/
+
+
+/**********************Inicia mi pie de pagina***********/
+footer{
+    margin-top: 100px;
+    background-color: #c9184a;
+    width: 102%;
+    height: 20%;
+}
+.home{
+    text-align: center;
+}
+.navhome{
+    padding-top: 25px;
+}
+.navft{
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+.linkft{
+    text-decoration: none;
+    font-size: 0.8em;
+}
+.icons{
+    align-items: center;
+    padding: 35px 25px 25px 25px;
+}
+.ic{
+    color: white;
+    font-size: 1.5em;
+    margin-right: 0px ;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 5px;
+
+}
+.ic:hover{
+    color: #c9184a;
+    background-color: white;
+}
+.pie{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*border: 1px solid black;*/
+}
+.final{
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+.heart{
+    font-size: 0.8em;
+    border: none;
 }

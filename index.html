@@ -9,6 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link href="estilo.css" rel="stylesheet">
         <link rel="icon" type="image/png" href="imagenes/favicon.png">
+        <script src="https://kit.fontawesome.com/2fd2695ea0.js" crossorigin="anonymous"></script>
         
     </head>
 
@@ -17,10 +18,10 @@
             <!--COMIENZA EL ENCABEZADO-->
             <header>
                     <nav> <!--Barra de navegacion-->
-                        <a href="#hola">HOLA</a></li>
-                        <a href="#conocimientos">CONOCIMIENTOS</a></li>
-                        <a href="#proyectos"> PROYECTOS</a></li>
-                        <a href="#contacto" class="boton">CONTACTO</a></li>
+                        <a href="#hola">HOLA</a>
+                        <a href="#conocimientos">CONOCIMIENTOS</a>
+                        <a href="#proyectos"> PROYECTOS</a>
+                        <a href="#contacto" class="boton">CONTACTO</a>
                         
                     </nav> <!--Fin de la barra de navegacion-->
             </header>
@@ -48,7 +49,7 @@
                 <div class="cajaconocimientos">
                     <div class="titulo">
                         <h1>Mis conocimientos</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, reiciendis hic ipsa libero exercitationem nihil ipsum dolores ea architecto ex labore pariatur odio sequi quia. Officiis saepe quia alias fugiat!</p>
+                        <p>Todos los temas que fui aprendiendo en Ada ITW</p>
                     </div>
                     <div class="iconos">
                         <div class="cards bord">
@@ -110,9 +111,9 @@
                 <div class="cita">
                    <img src="imagenes/comillas.svg" alt="">
                    <p>
-                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ea illo earum esse porro, laboriosam, hic, blanditiis quod pariatur quibusdam voluptatibus. Sunt, autem facere corporis suscipit ut incidunt explicabo! Sint?
+                    A veces no es cuestion de tener nuevas ideas, sino de dejar de tener ideas de las antiguas.
                    </p>
-                   <h3>Persona citada</h3>
+                   <h3>Edwin Land de Polaroid</h3>
                 </div>
             </section>
             <!----------CITA MOTIVACIONAL--------->
@@ -123,11 +124,11 @@
                 <div>
                     <div class="titulo">
                         <h1>Mis proyectos</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe natus voluptatem pariatur quo consequatur sed omnis, ducimus cupiditate facilis eius. Rem dignissimos in nulla possimus vitae cupiditate eligendi nisi.</p> 
+                        <p>Los proyectos que estamos haciendo en Ada ITW</p> 
                     </div><!--Descripcion general sobre mis proyectos-->
                     <div class="iconos proy">
                         <div class="cards bord pr">
-                            <a href="nombredelarchivo.html" target="_blank">
+                            <a href="https://priscilasanguinetti.github.io/mi_portfolio/" target="_blank">
                                 <figure>
                                     <img src="imagenes/portfolio.svg">
                                     <figcaption>
@@ -194,23 +195,25 @@
              <!----------SECCION CONTACTARME--------->
             <section class="section dat" id="contacto">
                 <div class="contacto">
-                    <div class="cardcont">
+                    <div class="cardcont ct">
                         <div class="titulo tc">
                             <h1>Contactame</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque omnis tenetur voluptas nam quae quod ipsa, hic unde? Error alias pariatur qui molestias adipisci aut, perspiciatis a deleniti doloremque officia!</p>
+                            <p>Redes sociales de contacto
+                            </p>
                         </div>
                         <div>
                             <ul class="link">
-                                <li class="red"><a class="redlink" href="#linkatwitter" target="_blank"><img src="imagenes/twitter (2).svg">@pipisanguinetti</a></li>
-                                <li><a href="https://github.com/PriscilaSanguinetti/" target="_blank"><img src="imagenes/github.svg">Priscila Sanguinetti</a></li>
-                                <li><a href="https://www.linkedin.com/in/priscilasolangesanguinetti/" target="_blank"><img src="imagenes/linkedin.svg">/priscilasolangesanguinetti</a></li>
-                                <li><a href="#linkamail" target="_blank"><img src="imagenes/email.svg">priscilasanguinetti@hotmail.com</a></li>
+                                <li class="red"><a href="#linkatwitter" target="_blank" class="icon"><i class="fab fa-twitter"></i >@PipiSanguinetti</a></li>
+                                <li class="red"><a href="https://github.com/PriscilaSanguinetti/" target="_blank" class="icon"><i class="fab fa-github" id="icon"></i >Priscila Sanguinetti</a></li>
+                                <li class="red"><a href="https://www.linkedin.com/in/priscilasolangesanguinetti/" target="_blank" class="icon"><i class="fab fa-linkedin" id="icon"></i >/priscilasolangesanguinetti</a></li>
+                                <li class="red"><a href="#linkamail" target="_blank" class="icon"><i class="fas fa-envelope" id="icon"></i >priscilasanguinetti@hotmail.com</a></li>
+                            
                             </ul>
                         </div>
                     </div>
 
                     <!--Formulario-->
-                    <div class="cardcont form">
+                    <div class="cardcont fr form">
                         <h1 class="tit">Escribime</h1>
                         <form action="suscribe.php">
                             <div class="divform">
@@ -244,25 +247,23 @@
 
              <!----------PIE DE PAGINA--------->
              <footer> 
-                <div>
-                    <nav> <!--Barra de navegacion-->
-                        <ul>
-                            <li><a href="#hola">Hola</a></li>
-                            <li><a href="#conocimientos">Conocimientos</a></li>
-                            <li><a href="#proyectos"> Proyectos</a></li>
-                            <li><a href="contacto">Contacto</a></li>
-                        </ul>
-                    </nav> <!--Fin de la barra de navegacion-->
+                <div class="pie">
+                    <ul class="home navhome">
+                        <li class="navft"> <a href="#hola" class="linkft">HOLA</a></li>
+                        <li class="navft"><a href="#conocimientos" class="linkft">CONOCIMIENTOS</a></li>
+                        <li class="navft"> <a href="#proyectos" class="linkft"> PROYECTOS</a></li>
+                        <li class="navft"><a href="#contacto" class="linkft">CONTACTO</a></li>
+                    </ul>                        
                 </div>
-                <div><!--Barra de iconos-->
-                    <ul>
-                        <li><a href="#linkatwitter"><img src="" alt=""></a></li>
-                        <li><a href="#linkagit"><img src="" alt=""></a></li>
-                        <li><a href="#linkalinkedin"><img src="" alt=""></a></li>
-                        <li><a href="#linkahotmail"><img src="" alt=""></a></li>
+                <div class="pie "><!--Barra de iconos-->
+                    <ul class=" home icons">
+                        <li class="navft" ><a href="#linkatwitter" class="linkft"><i class="fab fa-twitter ic "></i></a></li>
+                        <li class="navft"><a  href="https://github.com/PriscilaSanguinetti/" target="_blank" class="linkft"><i class="fab fa-github ic"></i></a></li>
+                        <li class="navft"><a href="https://www.linkedin.com/in/priscilasolangesanguinetti/" target="_blank" class="linkft"><i class="fab fa-linkedin ic"></i></a></li>
+                        <li class="navft"><a href="#linkahotmail" class="linkft"><i class="fas fa-envelope ic"></i></a></li>
                     </ul>
                 </div>
-                <p>Hecho con amor(icono) por Priscila</p>
+                <p class="final">Hecho con <i class="fas fa-heart ic heart"></i>por Priscila</p>
             </footer>
             <!----------fINALIZA PIE DE PAGINA--------->
 
