@@ -269,8 +269,10 @@ figure{
     margin: 30px 0px;
 }
 .tc p{
-    margin: 30px 10px 30px 12px;
-    font-weight: bold;
+    margin: 40px 10px 30px 12px;
+    
+    font-size: 20px;
+    letter-spacing: 2px;
 }
 .link{
     list-style: none;
