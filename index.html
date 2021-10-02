@@ -16,9 +16,9 @@
     <body>
         <main>
             <!--COMIENZA EL ENCABEZADO-->
-            <header>
+           <header>
                     <nav> <!--Barra de navegacion-->
-                        <a href="#hola">HOLA</a>
+                       <a href="#hola">HOLA</a>
                         <a href="#conocimientos">CONOCIMIENTOS</a>
                         <a href="#proyectos"> PROYECTOS</a>
                         <a href="#contacto" class="boton">CONTACTO</a>
@@ -28,31 +28,33 @@
             <!--fINALIZA EL ENCABEZADO-->
 
             <!----------SECCION RESUMEN SOBRE MI--------->
-            <section class="section" id="hola"> 
-                <div class="cardprincipal cardhola">
-                    <div class="info">
-                        <h2>Bienvenidos!</h2>
-                        <h1>Soy Priscila Sanguinetti</h1>
-                        <p>Web Developer, administradora y cantante profesional de ducha</p>
-                        <a href="#proyectos" class="boton about">LO QUE HAGO</a>
-                    </div>
-                </div>
-                <div class="cardprincipal cardhola">
-                    <img src="imagenes/universo.svg" alt="">
-                </div>
+          <section class="section" id="hola"> 
+                <div class="contenedor1">
+                    <div class="cardprincipal ">
+                        <div class="info">
+                            <h2>Bienvenidos!</h2>
+                            <h1>Soy Priscila Sanguinetti</h1>
+                            <p>Web Developer, administradora y cantante profesional de ducha</p>
+                            <a href="#proyectos" class="boton about">LO QUE HAGO</a>
+                        </div>
+                     </div>
+                    <div class="cardprincipal ">
+                        <img src="imagenes/universo.svg" alt="">
+                     </div>
+                 </div>
             </section>
             <!---------- FINALIZA SECCION RESUMEN SOBRE MI--------->
 
 
             <!----------SECCION CONOCIMIENTOS--------->
-            <section class="cajapadre" id="conocimientos"> 
-                <div class="cajaconocimientos">
+           <section class="cajapadre cajapr" id="conocimientos"> 
+                <div class="  contenedor">
                     <div class="titulo">
                         <h1>Mis conocimientos</h1>
                         <p>Todos los temas que fui aprendiendo en Ada ITW</p>
                     </div>
-                    <div class="iconos">
-                        <div class="cards bord">
+                    <div class="iconos proy">
+                        <div class="cards cards1 ">
                             <figure>
                                 <img src="imagenes/html-5-logotype.svg">
                                 <figcaption>
@@ -60,7 +62,7 @@
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="cards bord" >
+                        <div class="cards bord " >
                             <figure>
                                 <img src="imagenes/css-3 (1).svg">
                                 <figcaption>
@@ -68,7 +70,7 @@
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="cards bord">
+                        <div class="cards bord ">
                             <figure>
                                 <img src="imagenes/git.svg">
                                 <figcaption>
@@ -76,7 +78,7 @@
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="cards  bord">
+                        <div class="cards  bord ">
                             <figure>
                                 <img src="imagenes/java-script.svg">
                                 <figcaption>
@@ -84,7 +86,7 @@
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="cards  bord" >
+                        <div class="cards  bord " >
                             <figure>
                                 <img src="imagenes/sass.svg">
                                 <figcaption>
@@ -92,7 +94,7 @@
                                 </figcaption>
                             </figure>
                         </div>
-                        <div class="cards  bord">
+                        <div class="cards  bord ">
                             <figure>
                                 <img src="imagenes/react.svg">
                                 <figcaption>
@@ -107,7 +109,7 @@
 
 
             <!----------CITA MOTIVACIONAL--------->
-            <section>
+           <section >
                 <div class="cita">
                    <img src="imagenes/comillas.svg" alt="">
                    <p>
@@ -121,16 +123,16 @@
 
             <!----------SECCION MIS PROYECTOS--------->
             <section class="cajapadre cajapr" id="proyectos">
-                <div>
+                <div class="contenedor">
                     <div class="titulo">
                         <h1>Mis proyectos</h1>
                         <p>Los proyectos que estamos haciendo en Ada ITW</p> 
                     </div><!--Descripcion general sobre mis proyectos-->
-                    <div class="iconos proy">
+                    <div class="iconos ">
                         <div class="cards bord pr">
                             <a href="https://priscilasanguinetti.github.io/mi_portfolio/" target="_blank">
                                 <figure>
-                                    <img src="imagenes/portfolio.svg">
+                                    <img class="imagen" src="imagenes/portfolio.svg">
                                     <figcaption>
                                         MI PORTFOLIO
                                     </figcaption>
@@ -217,8 +219,8 @@
                         <h1 class="tit">Escribime</h1>
                         <form action="suscribe.php">
                             <div class="divform">
-                                <div class="cardform first">
-                                    <div class="carddatos sub">
+                                <div class="cardform ">
+                                    <div class="carddatos sub first">
                                         <label for="name">Nombre</label>
                                         <input class="dato" type="text" placeholder="Nombre">
                                     </div>
