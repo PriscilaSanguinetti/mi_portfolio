@@ -8,9 +8,9 @@
 body{
     background-color: #10002b;
     width: 100%;
-   /* -webkit-box-shadow: inset 1px 1px 20px  black ;
-    -moz-box-shadow: inset 1px 1px 20px  black ;
-    box-shadow: inset 1px 1px 20px  black ;*/
+    -webkit-box-shadow: inset -9px 0px 20px -6px black;
+-moz-box-shadow: inset -9px 0px 20px -6px black;
+box-shadow: inset -9px 0px 20px -6px black;
 }
 /*********COMIENZA BARRA DE NAVEGACION**********/
 nav{
@@ -23,7 +23,8 @@ nav{
     text-align: center;
     box-shadow: 1px 1px 20px black;
     background-color: #10002b;
-   /* border: 1px solid white;*/
+    
+    
 }
 nav a{
     text-decoration: none;
@@ -107,6 +108,22 @@ nav a:hover{
     padding: 10px 25px;
     margin-right: 40px;   
 }
+
+@media(max-width: 1071px){
+    .contenedor1{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .cardprincipal{
+        width: 100%;
+        text-align: center;
+    }
+    .cardprincipal img{
+        width: 50%;
+        margin-top: 0px;
+    }
+}
+    
 /****************************************/
 
 /*************COMIENZA LA SECCION DE CONOCIMIENTOS**********/
@@ -171,6 +188,7 @@ nav a:hover{
     display: inline-block;
     border-radius: 10px;
     background-color: #170635;
+    min-width: 13em;
 }
 
 .cards img{
@@ -215,18 +233,41 @@ figure{
     opacity: 0;
 
 }    */
+/*@media(max-width: 833px){
+    .cards{
+        width: 13em;
+    }*/
+
+
+@media (max-width:537px){
+    .cards figcaption{
+        font-size: 12px;
+    }
+}
+@media(max-width: 464px){
+    .titulo h1{
+        font-size: 25px ;
+    }
+    
+}
+
 
 /*****************************************************/
 
 
 /****************************CITA MOTIVACIONAL************/
+.cit{
+    -webkit-box-shadow: inset -9px 0px 16px -6px rgba(255,255,255,1);
+    -moz-box-shadow: inset -9px 0px 16px -6px rgba(255,255,255,1);
+    box-shadow: inset -9px 0px 16px -6px rgba(255,255,255,1);
+}
 .cita{
     text-align: center;
     background-color: #c9184a;
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-    margin: 50px 0px 0px 0px;
+   /* margin: 25px 0px 0px 0px;*/
     display: flex;
     justify-content: center;
     display: inline-block;
@@ -249,12 +290,12 @@ figure{
 
 /**************SECCION MIS PROYECTOS****************************/
 .pr{
-    width: 25%;
+    width: 18.75em;
     padding-bottom: 35px;
 }
 .pr img{
     width: 50%;
-    height: 150px;
+    height: 9.37em;
     padding-bottom: 25px;
 }
 .cards a{
@@ -262,7 +303,6 @@ figure{
     color: white;
     list-style: none;
 }
-
 
 
 
@@ -317,7 +357,7 @@ figure{
     line-height: 55px;
     margin-top: 25px;
     margin-left: 9px;
-   /* border: 1px solid green;*/
+  /* border: 1px solid green;*/
 }
 /*.red{
     border: 1px solid red
@@ -410,7 +450,7 @@ figure{
 }*/
 .sub{
    width: 45%;
-   border: 1px solid salmon;
+   /*border: 1px solid salmon;*/
    /* margin: 5px;*/
 }
 .first{
@@ -515,3 +555,38 @@ footer{
     font-size: 0.8em;
     border: none;
 }
+
+@media(max-width: 1113px){
+    .contacto{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0px;
+      /*  border: 1px solid red;*/
+    }
+    .cardcont{
+        width: 80%;
+        justify-content: center;
+    }
+    .ct{
+        margin-bottom: 0px;
+    }
+    .link{
+        flex-wrap: wrap;
+        width: 100%;
+        height: 200px;
+       /* height: 10%;*/
+        margin: 0px auto;
+      /*  border: 1px solid white;*/
+    
+    }
+   .red{
+       width: 30%;
+       /*border: 1px solid white;*/
+       display: inline-block;
+       padding-left: 50px;
+   }
+
+}
+
+/******************RESPONSIVE***************/
+
