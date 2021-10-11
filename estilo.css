@@ -60,20 +60,20 @@ nav a:hover{
 
 
 /*************COMIENZA LA SECCION SOBRE MI**********/
-.section{
+.first-section{
     display: flex;
     justify-content: center;
     /*border: 1px solid black;*/
     width: 100%;
 }
-.contenedor1{
+.first-container{
     max-width: 70.65em;
    /* border: 1px solid red;*/
     margin-top: 6.25em;
     display: flex;
     justify-content: space-around;
 }
-.cardprincipal{
+.card-start{
     
   /* border: 1px solid blue;*/
     width: 45%;
@@ -101,7 +101,7 @@ nav a:hover{
     color: #c9184a;
     font-weight: 800;
 }
-.cardprincipal img{
+.card-start img{
     width: 100%;
    
 }
@@ -117,15 +117,15 @@ nav a:hover{
 }
 
 @media(max-width: 1071px){
-    .contenedor1{
+    .first-container{
         flex-direction: column;
         margin-bottom: 0;
     }
-    .cardprincipal{
+    .card-start{
         width: 100%;
         text-align: center;
     }
-    .cardprincipal img{
+    .card-start img{
         width: 50%;
         margin-top: 0;
     }
@@ -134,7 +134,7 @@ nav a:hover{
     }
 }
 @media (max-width: 691px){
-    .contenedor1{
+    .first-container{
         margin-top: 0;
     }
 }
@@ -149,42 +149,39 @@ nav a:hover{
 /****************************************/
 
 /*************COMIENZA LA SECCION DE CONOCIMIENTOS**********/
-.cajapadre{
+.section-icons{
     text-align: center;
     display: inline-block;
     display: flex;
     align-content: center;
    /* border: 1px solid white;*/
     width: 100%;
-
-}
-.cajapr{
-  /*  border: 1px solid beige;*/
-    margin-bottom: 9.37em;
+margin-bottom: 9.37em;
     display: flex;
     justify-content: center;
-    
 }
-.contenedor{
+
+.container{
     max-width: 68.65em;
    /* border: 1px solid red;*/
 }
-.titulo{
+.tittle{
     width: 60%;
     
     margin: 4.68em auto 1.25em auto;
    /*border: 1px solid black;*/
 }
-.titulo h1{
+.tittle h1{
     width: 100%;
     font-size: 2.18em;
     font-weight: 800;
     /*border: 1px solid white;*/
-    margin: 1.87em 0;
+    margin: 1em 0;
 }
-.titulo p{
+.tittle p{
     width: 100%;
     letter-spacing: 0.2em;
+    margin-bottom: 2.5em;
 
 }
 .iconos{
@@ -198,11 +195,11 @@ nav a:hover{
    /**/
     
 }
-.proy{
+.box-know{
     width: 100%;
    /* border: 1px solid red;*/
 }
-.cards{
+.card-icon{
     width: 20%;
     border: 1px solid #1e0943;
     margin: 0.93em;
@@ -213,7 +210,7 @@ nav a:hover{
     min-width: 13em;
 }
 
-.cards img{
+.card-icon img{
    /* width: 50%;*/
    /* height: 800px;*/
     padding-bottom: 1.56em;
@@ -229,7 +226,7 @@ figure{
     max-width: 220px;
     margin: auto;*/
 }
-.cards figcaption{
+.card-icon figcaption{
     font-weight: 800;
     font-size: 1.06em;
 }
@@ -237,7 +234,7 @@ figure{
     border: 1px solid #c9184a;
     box-shadow: 1px 1px 5px #c9184a;
 }
-.cards:hover figure figcaption{
+.card-icon:hover figure figcaption{
    /* */
     color: #c9184a;
     /*text-shadow: 1px 1px 1px #c9184a*/
@@ -262,12 +259,12 @@ figure{
 
 
 @media (max-width:537px){
-    .cards figcaption{
+    .card-icon figcaption{
         font-size: 0.75em;
     }
 }
 @media(max-width: 464px){
-    .titulo h1{
+    .tittle h1{
         font-size: 1.56em ;
     }
     
@@ -278,12 +275,12 @@ figure{
 
 
 /****************************CITA MOTIVACIONAL************/
-.cit{
+.section-cita{
     -webkit-box-shadow: inset -9px 0px 16px -6px rgba(255,255,255,1);
     -moz-box-shadow: inset -9px 0px 16px -6px rgba(255,255,255,1);
     box-shadow: inset -9px 0px 16px -6px rgba(255,255,255,1);
 }
-.cita{
+.container-cita{
     box-sizing: border-box;
     text-align: center;
     background-color: #c9184a;
@@ -295,16 +292,16 @@ figure{
     justify-content: center;
     display: inline-block;
 }
-.cita img{
+.container-cita img{
     width: 5%;
 }
-.cita p{
+.container-cita p{
     /*border: 1px solid white;*/
     width: 80%;
     margin: 1.25em auto;
     font-size: 1.18em;
 }
-.cita h3{
+.container-cita h3{
     font-size: 1.56em;
     font-weight: 800;
 }
@@ -312,29 +309,53 @@ figure{
 
 
 /**************SECCION MIS PROYECTOS****************************/
-.pr{
+
+.card-proyect{
     width: 18.75em;
     padding-bottom: 2.18em;
 }
-.pr img{
+.card-proyect img{
     width: 50%;
     height: 9.37em;
     padding-bottom: 1.56em;
 }
-.cards a{
+.card-icon a{
     text-decoration: none;
     color: white;
     list-style: none;
 }
+.box-icon{
+    justify-content: space-between;
+}
+@media(max-width: 1084px){
+    .proyect{
+        max-width: 46em;
+        /*border: 1px solid orange;*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        
+    }
+}
+@media(max-width: 803px){
+    .proyect{
+        justify-content: center;
+    }
 
+}
+@media(max-width: 724px){
+    .box-icon{
+        justify-content: center;
+    }
 
+}
 
 /****************************************************************/
 
 /*********************SECCION CONTACTAME***********************/
             /***************contacto*******/
 
-.contacto{
+.container-contact{
     width: 90%;
     max-width: 68.65em;
     border: 1px solid #1e0943;
@@ -345,7 +366,7 @@ figure{
     margin-top: 0.62em;
    
 }
-.cardcont{
+.card-contact{
     /*justify-content: center;*/
     margin: 3.12em auto;
     line-height: normal;
@@ -356,7 +377,7 @@ figure{
     justify-content: center;
    
 }
-.ct{
+.box-contact{
     margin-left: 6.25em;
     
 }
@@ -433,10 +454,10 @@ figure{
     
             /******************************/
 
-.fr{
+.card-form{
     margin-right: 6.25em;
 }
-.cardcont .tit{
+.card-contact .tit{
     font-size: 2.18em;
     font-weight: 800;
    /* border: 1px solid white;*/
@@ -453,7 +474,7 @@ figure{
   /*  border: 1px solid rosybrown;*/
     
 }
-.cardform{/*
+.box-date {/*
     display: inline-block;*/
     display: flex;
     flex-wrap: wrap;
@@ -464,7 +485,7 @@ figure{
    /* border: 1px solid red;*/
 
 }
-.carddatos{
+.datos{
     display: flex;
     flex-direction: column;
     width: 95%;
@@ -530,14 +551,14 @@ input{
     color: rgb(94, 90, 90);
 }
 @media(max-width: 1113px){
-    .contacto{
+    .container-contact{
         flex-direction: column;
         justify-content: center;
         text-align: center;
         margin-top: 0;
        /*border: 1px solid red;*/
     }
-    .cardcont{
+    .card-contact{
         width: 80%;
         justify-content: center;
        /* border: 1px solid purple;*/
@@ -599,7 +620,7 @@ input{
         padding: 0;
     }
 
-    .cardform{
+    .card-form{
         flex-direction: column;
     }
     .sub{
