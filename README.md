@@ -3,6 +3,9 @@
 Bienvenidos!
 Soy Priscila Sanguinetti, futura desarrolladora web y Lic. en Administracion de empresas
 
+![portfolio](https://user-images.githubusercontent.com/89270653/136729482-929f2592-b9f0-4c28-82bd-a6f9cb945e21.png)
+
+
 ## Mis conocimientos
 - HTML 5
 - CSS
